@@ -562,7 +562,8 @@ textarea.form-control {
 .plusminbtn {
     background-color: #f9b074;
 }
-.table.table-bordered {
+.mymenu {
+    padding: 30px 15px;
 }
 .table.table-bordered thead th {
     background-color: #f9b074;
@@ -585,7 +586,6 @@ textarea.form-control {
     line-height: 22px;
     font-size: 12px;
   }
-
 
 
 
@@ -712,5 +712,11 @@ textarea.form-control {
     .loginbtn {
         margin-right: 10px;
     }
-
+    #nav-Coffee-tab {
+        width: 80px!important;
+    }
+    .mymenu #nav-tab img {
+        width: 60px;
+        height: 60px;
+    }    
 }
