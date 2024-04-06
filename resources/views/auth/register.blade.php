@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="pageheaders">
-    <h1>REGSITER</h1>
+    <h1 class="mt-5 mb-5 text-white text-center">REGSITER</h1>
 </div>
 
 
