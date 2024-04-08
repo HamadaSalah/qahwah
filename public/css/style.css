@@ -345,6 +345,9 @@ body {
   font-size: 30px;
   color: #44220A;
 }
+
+
+
 .number {
   position: absolute;
     bottom: 0;
@@ -683,6 +686,9 @@ a:hover {
   margin: auto;
 }
 
+#dropdownMenuButton1 {
+  background: none;
+}
 
 
 

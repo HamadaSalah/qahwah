@@ -37,9 +37,12 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h4>SOCIAL</h4>
-                            <a target="_blank" href="{{ Settings()->fb }}"><i class="fa fa-facebook socailM" aria-hidden="true"></i></a>
-                            <a target="_blank" href="{{ Settings()->tw }}"><i class="fa fa-twitter socailM" aria-hidden="true"></i></a>
-                            <a target="_blank" href="{{ Settings()->ins }}"><i class="fa fa-instagram socailM" aria-hidden="true"></i></a>
+                            <a target="_blank" href="{{ Settings()->fb }}"><i class="fa fa-facebook socailM"
+                                    aria-hidden="true"></i></a>
+                            <a target="_blank" href="{{ Settings()->tw }}"><i class="fa fa-twitter socailM"
+                                    aria-hidden="true"></i></a>
+                            <a target="_blank" href="{{ Settings()->ins }}"><i class="fa fa-instagram socailM"
+                                    aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
@@ -52,7 +55,15 @@
     <script src="{{ asset('front/js/popper.min.js') }}"></script>
     <script src="{{ asset('front/js/bootstrap.bundle.min.js') }}"></script>
     @stack('scripts')
+    <script>
+        $(window).on('load', function () {
+            // Remove loader when all page content has finished loading
+            $('.myloader').fadeOut('slow', function () {
+                $(this).remove();
+            });
+        });
 
+    </script>
     </body>
 
     </html>

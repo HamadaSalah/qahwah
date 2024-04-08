@@ -25,7 +25,7 @@
 
     <link href="{{ asset('front/css/bootstrap.min.css') }}" rel="stylesheet">
     <script src="{{ asset('front/js/e67bbf3dac.js') }}"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap" rel="stylesheet">
     <!-- mystyle -->
     <link rel="stylesheet" href="{{ asset('front/css/animate.min.css')}}">
     <link href="{{ asset('front/css/style.css')}}" rel="stylesheet">
@@ -64,3 +64,10 @@
 </head>
 
 <body>
+<div class="myloader" style="padding-top: 20%">
+    <img src="{{asset('front/img/logo.png')}}" alt="" style="width: 300px">
+    <img src="{{asset('front/img/hot_beverage_1024.gif')}}" alt="" style="width: 300px">
+    <h1 class="text-white">LOADING...</h1>
+
+    
+</div>

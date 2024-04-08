@@ -30,7 +30,7 @@
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            {{ Str::substr(auth()->user()->name, 0, 20) }} 
+                           <img src="{{ asset('front/img/user.svg') }}" alt="" style="width: 27px;">
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <li style="width: 100%"><a class="dropdown-item" href="{{ Route('orders') }}">My Orders</a>
@@ -48,9 +48,18 @@
 
 
                 @endguest
+
                 <a href="{{ Route('cart') }}" style="float: right">
                     
-                    <li style="position: relative"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i><span class="number">{{CartCount()}}</span></li>
+                    <li style="position: relative">
+                        <img src="{{ asset('front/img/cart.svg') }}" alt="" style="width: 27px;">
+                        <span style="<?php if(CartCount() == 0) echo 'display:none'; ?>" class="number">{{CartCount()}}</span></li>
+                </a>
+                <a href="#" style="float: right;margin-right: 20px">
+                    
+                    <li style="position: relative">
+                        <img src="{{ asset('front/img/search.svg') }}" class="searchSvg" alt="" style="width: 27px;">
+                    </li>
                 </a>
 
             </div>
