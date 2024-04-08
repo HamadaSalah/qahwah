@@ -240,7 +240,9 @@ a {
 .mymenu .nav-tabs .nav-link:hover {
     border: 0;
 }
-
+.mymenu .nav-tabs .nav-link.active {
+    position: relative;
+}
 .mymenu .nav-tabs .nav-link.active::after {
     content: '';
     color: #f9b074;
@@ -251,6 +253,8 @@ a {
     border-radius: 50%;
     text-align: center;
     margin: auto;
+    position: absolute;
+    left: 43%;
 }
 
 .menus {
@@ -902,9 +906,7 @@ textarea.form-control {
     .loginbtn {
         margin-right: 10px;
     }
-    #nav-Coffee-tab {
-        width: 80px!important;
-    }
+
     .mymenu #nav-tab {
         display: -webkit-inline-box;
     }
