@@ -153,7 +153,7 @@ a {
 
 }
 
-.bestSell img {
+.bestSell > img {
     margin-top: -100px;
     text-align: center;
 }
@@ -202,11 +202,14 @@ a {
 }
 
 .mymenu #nav-tab img {
-    filter: brightness(0) invert(0);
+    filter: brightness(0) invert(0.7);
     height: 80px;
 
 }
+.mymenu .nav-tabs .nav-link.active img {
+    filter: brightness(0) invert(0)!important;
 
+}
 .mymenu h5 {
     color: #383431;
     margin: 10px 0;

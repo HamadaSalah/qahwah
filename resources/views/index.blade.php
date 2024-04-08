@@ -62,10 +62,12 @@
                     <h3>{{ $seller->name }}</h3>
                     <p>{{ $seller->desc }}</p>
                     <div class="addCart">
-                        <form action="{{route('AddToCart', $seller->id)}}" method="POST">
+                        
+                        <form action="{{route('AddToCart', $seller->id)}}" method="POST" style="display: inline-block">
                             @csrf
-                            <button class="btn   addtocart">
-                                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> <span class="Price">{{ $seller->price }}$</span>
+                            <button class="btn   addtocart" type="submit">
+                                <img src="{{ asset('front/img/cart2.svg') }}" alt="" style="width: 27px;margin-right: 10px">
+                                  </i> <span class="Price">{{ $seller->price }}$</span>
                             </button>
                         </form>
 
@@ -121,7 +123,7 @@
                                                         <form action="{{route('AddToCart', $seller->id)}}" method="POST">
                                                             @csrf
                                                             <button class="btn   addtocart">
-                                                                <i class="fa fa-cart-arrow-down" style="font-size:30px" aria-hidden="true"></i> 
+                                                                <img src="{{ asset('front/img/cart2.svg') }}" alt="" style="width: 27px;"> 
                                                             </button>
                                                         </form>
                                 
@@ -147,7 +149,7 @@
                                                         <form action="{{route('AddToCart', $seller->id)}}" method="POST">
                                                             @csrf
                                                             <button class="btn   addtocart">
-                                                                <i class="fa fa-cart-arrow-down" style="font-size:30px" aria-hidden="true"></i> 
+                                                                <img src="{{ asset('front/img/cart2.svg') }}" alt="" style="width: 27px;"> 
                                                             </button>
                                                         </form>
 

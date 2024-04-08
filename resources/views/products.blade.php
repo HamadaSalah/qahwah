@@ -43,7 +43,7 @@
                                                             <form action="{{route('AddToCart', $prod->id)}}" method="POST">
                                                                 @csrf
                                                                 <button class="btn   addtocart">
-                                                                    <i class="fa fa-cart-arrow-down" style="font-size:30px" aria-hidden="true"></i> 
+                                                                    <img src="{{ asset('front/img/cart2.svg') }}" alt="" style="width: 27px;"> 
                                                                 </button>
                                                             </form>
     
@@ -70,7 +70,7 @@
                                                             <form action="{{route('AddToCart', $prod->id)}}" method="POST">
                                                                 @csrf
                                                                 <button class="btn   addtocart">
-                                                                    <i class="fa fa-cart-arrow-down" style="font-size:30px" aria-hidden="true"></i> 
+                                                                    <img src="{{ asset('front/img/cart2.svg') }}" alt="" style="width: 27px;"> 
                                                                 </button>
                                                             </form>
     
