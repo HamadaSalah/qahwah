@@ -915,6 +915,12 @@ textarea.form-control {
         width: 100%;
         height: 60px;
     }  
+    .nav-tabs .nav-link {
+        border: 0;
+        padding: 10px;
+        text-align: center;
+        margin: auto;
+    }
     .navbar-toggler-icon {
         background-image: url(../img/menu.png);
     }  
