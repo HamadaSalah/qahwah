@@ -6,7 +6,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4">
-                                <h1>Qahwah Valley<br />VALLEY</h1>
+                                <h1>Qahwah <br />VALLEY</h1>
                                 <p>The sky was cloudless and of a deep<br />
                                     dark blue spectacle before us was<br />
                                     indeed sublime.</p>
